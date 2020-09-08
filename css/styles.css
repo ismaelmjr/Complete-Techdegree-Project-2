@@ -1,0 +1,287 @@
+/* Base Layout Styles */
+
+html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background: rgb(248, 248, 248);
+}
+
+h1 {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+h1,
+a{
+    color: rgb(75, 74, 74);
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h2 {
+    color: rgb(71, 71, 71);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+p {
+    color: rgb(71, 71, 71);
+    font-size: .8rem;
+    line-height: 1.3rem;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+nav,
+header,
+hr,
+footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+
+/* Class Selector Styles */
+.container {
+    text-align: center;
+}
+
+.wrapper {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.name {
+    display: inline-block;
+    color: rgb(75, 74, 74);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 25px 50px 15px;
+}
+
+.main-nav {
+    margin-bottom: 40px;
+}
+
+.main-nav a {
+    display: block;
+}
+
+.main-nav li {
+    background-color: white;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.main-header {
+    max-width: 1260px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 65%;
+}
+
+.intro {
+    color: rgb(148, 148, 148);
+    padding: 20px;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.contact-info {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-info ul {
+    color: rgb(71, 71, 71);
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.9;
+    padding-bottom: 50px;
+}
+
+.footer-name,
+.mobile a {
+    color: rgb(75, 74, 74);
+    font-size: .5rem;
+    font-weight: 500;
+}
+
+.mobile a {
+    float: right;
+}
+
+
+.footer-nav {
+    margin: 15px 10px 5px;
+}
+
+.footer-name {
+    float: left;
+}  
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.desktop {
+    display: none;
+}
+
+/* Main Content Styles */
+
+#main-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#main-content img {
+    width: 100%;
+    padding-top: 34px;
+}
+
+
+/* Pseudo Class Styles */
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* Media Queries Styles*/
+
+@media(min-width: 768px) {
+
+    html {
+        font-size: 1.2em;
+    }
+
+    .name {
+        padding: 50px 0 20px;
+    }
+
+    .main-nav {
+        margin: 0 auto;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background-color: transparent;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .main-header {
+        text-align: left;
+        padding: 50px 0;
+    }
+
+    .profile-pic,
+    .intro {
+        width: 46.5%;
+    }
+
+    .profile-pic {
+        float: right;
+    }
+
+    .intro {
+        float: left;
+    }
+
+    .desktop {
+        display: inline-block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .note {
+        width: 80%;
+        max-width: 600px;
+        font-size: 1rem;
+    }
+
+    .footer-name {
+        font-size: .8rem;
+        padding: 35px 20px 60px 20px;
+
+    }
+
+    .footer-nav {
+        float: right;
+        padding: 20px 20px 60px 20px;
+    }
+
+    .footer-nav li {
+        margin-left: 10px;
+    }
+
+    #main-content img {
+        width: 100%;
+    }
+
+    #main-content .portfolio-items {
+        margin-left:  20px;
+    }
+
+    #main-content .portfolio-item {
+        width: 46.5%;
+        margin: 5px;
+        float: left;
+    }
+
+    .clearfix::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media(min-width: 1024px) {
+
+    .wrapper {
+        margin: 0 auto;
+        width: 98%;
+    }
+
+    nav {
+        width: 90%;
+        max-width: 1200px;
+    }
+    
+    .main-nav li {
+        margin-top: 50px;
+        float: right;
+    }
+
+    .name {
+        float: left;
+    }
+
+    #main-content .portfolio-item {
+        width: 31.50%;
+    
+    }
+
+}
